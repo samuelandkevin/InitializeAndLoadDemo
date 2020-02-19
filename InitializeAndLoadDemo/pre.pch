@@ -1,0 +1,21 @@
+//
+//  pre.pch
+//  InitializeAndLoadDemo
+//
+//  Created by 黄坤鹏 on 2020/2/19.
+//  Copyright © 2020 samuelandkeivn. All rights reserved.
+//
+
+#ifndef pre_pch
+#define pre_pch
+
+#ifdef DEBUG
+#define LGLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ## __VA_ARGS__);
+#else
+#define LGLog(...)
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* pre_pch */
